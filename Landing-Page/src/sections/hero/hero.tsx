@@ -1,23 +1,29 @@
+import "./hero.css";
 
+export const Hero = ()=>{
+  return(
+    <section id ="hero" className="hero">
 
-export const Hero = () => {
-  return (
-    <section id="hero">
-      <p>Hola, soy</p>
+      <div className="container hero__container">
 
-      <h2>Marta Diaz Valdebenito </h2>
+        <div className="hero__content">
 
+          <span className="hero__hello">
+            Hola, soy
+          </span>
 
-      <p>
-        Desarrolladora Frontend , especializada en React,
-        TypeScript y JavaScript. Me apasiona crear aplicaciones web modernas,
-        escalables y con una excelente experiencia de usuario.
-      </p>
+          <h1> 
+            Marta Diaz <br/>
+            valdebenito
+          </h1>
 
-      <div>
-        <button>Ver proyectos</button>
-        <button>Sobre mí</button>
+          <h2> Desarrolladora Frontend</h2>
+
+          <p> Tengo experiencia en React, TypeScript Me apasiona crear 
+            aplicaciones web modernas </p>
+
+        </div>
       </div>
-    </section>
+    </section>    
   );
 };

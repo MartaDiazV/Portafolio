@@ -1,11 +1,20 @@
 import './App.css'
-import {Hero} from './sections/hero/hero'
+
+
+import{ Hero } from "./sections/hero/hero";
+import { Header } from './components/layout/Header';
+import { Footer } from './components/layout/footer/Footer';
+
+
+
 function App() {
   return (
     <>
-     <Hero></Hero>
+     <Header/>
+     <Hero/>
+     <Footer/>
     </>
-  )
+  );
 }
 
 export default App

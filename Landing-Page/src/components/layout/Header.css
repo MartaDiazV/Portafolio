@@ -1,0 +1,43 @@
+
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 70px;
+    background: #1b1030;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(255, 255, 255, .08);
+}
+
+.header__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    color: #d6d6d6;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: #A855F7;
+}

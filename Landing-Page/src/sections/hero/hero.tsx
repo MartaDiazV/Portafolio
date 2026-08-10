@@ -12,15 +12,17 @@ export const Hero = ()=>{
             Hola, soy
           </span>
 
-          <h1> 
+          <h1 className="hero__title"> 
             Marta Diaz <br/>
             valdebenito
           </h1>
 
-          <h2> Desarrolladora Frontend</h2>
+          <h2 className="hero__subtitle">Desarrolladora Frontend</h2>
 
-          <p> Tengo experiencia en React, TypeScript Me apasiona crear 
-            aplicaciones web modernas </p>
+          <p className="hero__description">
+            Tengo experiencia en React y TypeScript. Me apasiona crear
+            aplicaciones web modernas.
+          </p>
 
         </div>
       </div>

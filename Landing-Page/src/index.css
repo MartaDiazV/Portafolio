@@ -13,6 +13,8 @@
   font-family: 'Poppins', sans-serif;
   background: #0D071C;
   color: white;
+
+  overflow-x: hidden;
  }
 
  a{
@@ -22,3 +24,10 @@
  button{
   font-family: inherit;
  }
+
+ img{
+    max-width: 100%;
+    display: block;
+ }
+
+ 

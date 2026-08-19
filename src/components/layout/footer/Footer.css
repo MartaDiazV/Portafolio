@@ -2,7 +2,7 @@
 .footer{
     background-color: #1b1030;
     padding: 2rem 10%;
-    margin-top: 4rem;
+    margin-top: 6rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -31,4 +31,16 @@
 .footer__social a:hover{
     color: #8b5cf6;
     transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 1.75rem 6%;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
 }

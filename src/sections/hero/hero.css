@@ -1,11 +1,11 @@
 
 .hero{
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     background-color: #0D071C;
     color: white;
-    padding: 70px 10%;
+    padding: 140px 10% 35px;
 }
 
 .hero__container{
@@ -24,7 +24,50 @@
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.15;
-    margin : 0 0 35px 0;
+    margin: 0;
+}
+
+.hero__intro{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.hero__text{
+    min-width: 0;
+}
+
+.hero__about{
+    scroll-margin-top: 100px;
+}
+
+.hero__photo-wrapper{
+    position: relative;
+    flex: 0 0 155px;
+    width: 155px;
+}
+
+.hero__photo-wrapper::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 12%;
+    background: #8B5CF6;
+    border-radius: 50%;
+    filter: blur(28px);
+    opacity: 0.9;
+}
+
+.hero__photo{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(216, 180, 254, 0.7);
+    box-shadow: 0 0 24px rgba(168, 85, 247, 0.55);
 }
 
 .hero__subtitle{
@@ -38,7 +81,105 @@
     line-height: 1.6;
     font-size: 1.1rem;
     max-width: 650px;
-    margin: 0 0 45px 0;
+    margin: 0;
+}
+
+.hero__technologies {
+    width: min(100%, 520px);
+    margin: 3.5rem auto 0;
+    text-align: center;
+}
+
+.hero__technologies-text {
+    margin: 0 0 1rem;
+    color: #d8b4fe;
+    font-size: 0.95rem;
+}
+
+.hero__technology-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.65rem;
+    padding-bottom: 3.1rem;
+}
+
+.hero__technology-icons::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 48px;
+    border-top: 1px solid rgba(168, 85, 247, 0.55);
+    border-radius: 50% 50% 0 0;
+    transform: translateX(-50%);
+}
+
+.technology-icon {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    width: 31px;
+    height: 31px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(139, 92, 246, 0.18);
+    color: #e9d5ff;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.25);
+}
+
+.technology-icon--react { color: #61dafb; }
+.technology-icon--typescript { color: #3178c6; }
+.technology-icon--html { color: #e34f26; }
+.technology-icon--css { color: #1572b6; }
+.technology-icon--github { color: #ffffff; }
+
+.hero__technology-orbit {
+    position: relative;
+    display: grid;
+    width: 128px;
+    height: 92px;
+    margin: -2px auto 0;
+    place-items: center;
+}
+
+.hero__technology-orbit::before,
+.hero__technology-orbit::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    border: 1px solid rgba(168, 85, 247, 0.48);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.hero__technology-orbit::before {
+    width: 128px;
+    height: 42px;
+    bottom: 5px;
+}
+
+.hero__technology-orbit::after {
+    width: 162px;
+    height: 58px;
+    bottom: -3px;
+    opacity: 0.55;
+}
+
+.hero__technology-core {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #8b5cf6, #3b1577 62%, transparent 72%);
+    color: white;
+    font-size: 1.7rem;
+    box-shadow: 0 0 28px 10px rgba(139, 92, 246, 0.5);
 }
 
 .hero__buttons{
@@ -52,7 +193,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
-    display: incline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -88,6 +229,11 @@
     font-size: 3.2rem;
   }
 
+  .hero__photo-wrapper {
+    flex-basis: 130px;
+    width: 130px;
+  }
+
   .hero__subtitle {
     font-size: 1.8rem;
   }
@@ -103,6 +249,16 @@
     font-size: 2.7rem;
   }
 
+  .hero__intro {
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .hero__photo-wrapper {
+    flex-basis: 100px;
+    width: 100px;
+  }
+
   .hero__subtitle {
     font-size: 1.5rem;
   }
@@ -111,12 +267,43 @@
     font-size: 1rem;
   }
 
+  .hero__technologies {
+    margin-top: 2.75rem;
+  }
+
+  .hero__technology-icons {
+    gap: 0.4rem;
+  }
+
+  .technology-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
   .hero__buttons {
     flex-direction: column;
   }
 
   .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__intro {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 42px;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: clamp(2.2rem, 11vw, 2.7rem);
   }
 }
 

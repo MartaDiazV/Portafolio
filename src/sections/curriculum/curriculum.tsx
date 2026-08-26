@@ -24,7 +24,7 @@ export const Curriculum = () => {
 
           <a
             className="curriculum__button"
-            href="/documents/CV-Marta-Diaz-Valdebenito.pdf"
+            href="/documents/CV_Marta_Diaz.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

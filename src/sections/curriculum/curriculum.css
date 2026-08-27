@@ -1,5 +1,5 @@
 .curriculum {
-    padding: 4.5rem 10% 5rem;
+    padding: 7rem 10% 5rem;
     background: #0D071C;
     color: white;
     scroll-margin-top: 90px;
@@ -7,7 +7,9 @@
 
 .curriculum__container {
     width: 100%;
-    max-width: 700px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
     text-align: center;
 }
 

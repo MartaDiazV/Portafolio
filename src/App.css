@@ -1,13 +1,23 @@
-
-#root{
+#root {
   width: 100%;
   min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .section-divider {
   width: min(82%, 560px);
   height: 1px;
-  margin: -1.5rem auto;
+  margin: 0 auto;
   background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.75), transparent);
   box-shadow: 0 0 15px rgba(139, 92, 246, 0.55);
 }
